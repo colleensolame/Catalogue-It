@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>1084156983881-renceuqa9lfoa34jnq9f1f7fit0tuhgb.apps.googleusercontent.com</string>
+	<string>252994636800-ineq8vel7kki5e53ic87hiri3kb1ln8j.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1084156983881-renceuqa9lfoa34jnq9f1f7fit0tuhgb</string>
+	<string>com.googleusercontent.apps.252994636800-ineq8vel7kki5e53ic87hiri3kb1ln8j</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAjtWZsokn4LIMg7IBWhWBLUsTG4QpBteM</string>
+	<string>AIzaSyBpA6TiDgGO2wImKaB1DtglRba_Bub5ZOk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1084156983881</string>
+	<string>252994636800</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ZND-Code.Catalogue-It---Personal-Collections</string>
+	<string>com.ZND-Code.Catalogue-It</string>
 	<key>PROJECT_ID</key>
-	<string>catalogue-it</string>
+	<string>catalogue-it-221a4</string>
 	<key>STORAGE_BUCKET</key>
-	<string>catalogue-it.appspot.com</string>
+	<string>catalogue-it-221a4.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1084156983881:ios:5bbc048c36b1a1b0</string>
+	<string>1:252994636800:ios:fa04b48328e8e706</string>
 	<key>DATABASE_URL</key>
-	<string>https://catalogue-it.firebaseio.com</string>
+	<string>https://catalogue-it-221a4.firebaseio.com</string>
 </dict>
 </plist>
