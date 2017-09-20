@@ -14,6 +14,7 @@
 		0F226ADB1F716A1A00F78222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F226AD91F716A1A00F78222 /* LaunchScreen.storyboard */; };
 		0F226AE71F7175B600F78222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F226AE61F7175B600F78222 /* GoogleService-Info.plist */; };
 		0F226AE91F717E4500F78222 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F226AE81F717E4500F78222 /* CollectionsViewController.swift */; };
+		0FF11B2A1F7241FA00D7658E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF11B291F7241FA00D7658E /* SignUpViewController.swift */; };
 		4E0C799DE1483A29834ACA43 /* Pods_Catalogue_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28E50BB8AAE83CF66A81C0 /* Pods_Catalogue_It.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0F226ADC1F716A1A00F78222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F226AE61F7175B600F78222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F226AE81F717E4500F78222 /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		0FF11B291F7241FA00D7658E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		16AD84E06051DBD4A5FF224B /* Pods-Catalogue It.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catalogue It.release.xcconfig"; path = "Pods/Target Support Files/Pods-Catalogue It/Pods-Catalogue It.release.xcconfig"; sourceTree = "<group>"; };
 		C25577EC9C78D18A9785AAB8 /* Pods-Catalogue It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catalogue It.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Catalogue It/Pods-Catalogue It.debug.xcconfig"; sourceTree = "<group>"; };
 		FF28E50BB8AAE83CF66A81C0 /* Pods_Catalogue_It.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catalogue_It.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				0F226AD01F716A1A00F78222 /* AppDelegate.swift */,
 				0F226AD21F716A1A00F78222 /* LoginViewController.swift */,
 				0F226AE81F717E4500F78222 /* CollectionsViewController.swift */,
+				0FF11B291F7241FA00D7658E /* SignUpViewController.swift */,
 				0F226AD41F716A1A00F78222 /* Main.storyboard */,
 				0F226AD71F716A1A00F78222 /* Assets.xcassets */,
 				0F226AD91F716A1A00F78222 /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			files = (
 				0F226AE91F717E4500F78222 /* CollectionsViewController.swift in Sources */,
 				0F226AD31F716A1A00F78222 /* LoginViewController.swift in Sources */,
+				0FF11B2A1F7241FA00D7658E /* SignUpViewController.swift in Sources */,
 				0F226AD11F716A1A00F78222 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,9 +27,20 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnLogin(_ sender: Any) {
         
-        performSegue(withIdentifier: "collectionsSegue", sender: nil)
         
-        /*if (txtEmail.text?.isEmpty == false && txtPassword.text?.isEmpty == false) {
+        
+        if (txtEmail.text?.isEmpty == true) || (txtPassword.text?.isEmpty == true) {
+            let alert = UIAlertController(title: "Login Failed", message: "Please enter email and password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        /*} else if {*/
+            
+        } else {
+            performSegue(withIdentifier: "collectionsSegue", sender: nil)
+        }
+        
+        /*
             let databaseRef = Auth.auth().
             
             databaseRef.child("Users").observeSingleEventOfType(FIRDataEventType.Value, withBlock: { (snapshot) in

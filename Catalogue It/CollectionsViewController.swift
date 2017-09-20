@@ -34,6 +34,7 @@ class CollectionsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @IBAction func btnLogOut(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func btnAdd(_ sender: Any) {
