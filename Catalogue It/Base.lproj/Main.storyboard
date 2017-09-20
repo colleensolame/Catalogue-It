@@ -49,7 +49,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-iR-id3">
                                 <rect key="frame" x="168.5" y="368.5" width="38" height="30"/>
@@ -177,7 +177,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-LK-qPL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-LK-qPL">
                                 <rect key="frame" x="62" y="273.5" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="AL0-Eg-sZ7"/>
@@ -255,8 +255,8 @@
                         <outlet property="lblSuccess" destination="5UG-dI-J0y" id="lzn-yY-rGp"/>
                         <outlet property="txtConfirmPassword" destination="Dnd-tl-hZd" id="ejr-hM-cx6"/>
                         <outlet property="txtEmail" destination="HH3-xf-EWg" id="emg-Vu-4Rd"/>
+                        <outlet property="txtFullName" destination="q7p-LK-qPL" id="spl-Zj-0PN"/>
                         <outlet property="txtPassword" destination="WhP-tg-pbA" id="vWA-C5-VVf"/>
-                        <outlet property="txtUsername" destination="q7p-LK-qPL" id="DDo-cB-zBM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbZ-gs-pfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
