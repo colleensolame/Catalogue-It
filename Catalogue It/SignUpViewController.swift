@@ -12,7 +12,8 @@ import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
     
-    let set = NSCharacterSet.letters.inverted   // Range for text input allowed. Only characters
+    // Range for text input allowed. Only characters
+    let set = NSCharacterSet.letters.inverted
     
     @IBOutlet weak var txtFullName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
@@ -47,7 +48,7 @@ class SignUpViewController: UIViewController {
             // Validation: Check if Full Name contains numbers or special characters
             
             lblSuccess.isHidden = true
-            let alert = UIAlertController(title: "Sign Up Failed", message: "Full Name cannot contain numbers or special characters", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Sign Up Failed", message: "Full Name cannot contain numbers or space or special characters", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
