@@ -69,8 +69,8 @@
 			children = (
 				0F226AD01F716A1A00F78222 /* AppDelegate.swift */,
 				0F226AD21F716A1A00F78222 /* LoginViewController.swift */,
-				0F226AE81F717E4500F78222 /* CollectionsViewController.swift */,
 				0FF11B291F7241FA00D7658E /* SignUpViewController.swift */,
+				0F226AE81F717E4500F78222 /* CollectionsViewController.swift */,
 				0F226AD41F716A1A00F78222 /* Main.storyboard */,
 				0F226AD71F716A1A00F78222 /* Assets.xcassets */,
 				0F226AD91F716A1A00F78222 /* LaunchScreen.storyboard */,
