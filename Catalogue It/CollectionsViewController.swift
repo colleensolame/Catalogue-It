@@ -38,28 +38,29 @@ class CollectionsViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @IBAction func btnAdd(_ sender: Any) {
-        let alertController = UIAlertController(title: "Create New Collection", message: nil, preferredStyle: .alert)
         
-        let confirmAction = UIAlertAction(title: "Create", style: .default) { (_) in
-            if alertController.textFields?[0].text != "" {
-                self.collections.append((alertController.textFields?[0].text)!)
-                self.collectionsTableView.reloadData()
-            } else {
-                self.collections.append("(empty)")
-                self.collectionsTableView.reloadData()
-            }
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
-        
-        
-        alertController.addTextField(configurationHandler: {(textField : UITextField!) -> Void in
-            textField.placeholder = "New Collection"
-        })
-        
-        alertController.addAction(confirmAction)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController(title: "Create New Collection", message: nil, preferredStyle: .alert)
+//        
+//        let confirmAction = UIAlertAction(title: "Create", style: .default) { (_) in
+//            if alertController.textFields?[0].text != "" {
+//                self.collections.append((alertController.textFields?[0].text)!)
+//                self.collectionsTableView.reloadData()
+//            } else {
+//                self.collections.append("(empty)")
+//                self.collectionsTableView.reloadData()
+//            }
+//        }
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+//        
+//        
+//        alertController.addTextField(configurationHandler: {(textField : UITextField!) -> Void in
+//            textField.placeholder = "New Collection"
+//        })
+//        
+//        alertController.addAction(confirmAction)
+//        alertController.addAction(cancelAction)
+//        
+//        self.present(alertController, animated: true, completion: nil)
         
     }
     
