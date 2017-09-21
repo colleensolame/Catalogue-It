@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F226ACC1F716A1A00F78222"
-               BuildableName = "Catalogue It.app"
-               BlueprintName = "Catalogue It"
-               ReferencedContainer = "container:Catalogue It.xcodeproj">
+               BuildableName = "Catalogue It - Personal Collections.app"
+               BlueprintName = "Catalogue It - Personal Collections"
+               ReferencedContainer = "container:Catalogue It - Personal Collections.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F226ACC1F716A1A00F78222"
-            BuildableName = "Catalogue It.app"
-            BlueprintName = "Catalogue It"
-            ReferencedContainer = "container:Catalogue It.xcodeproj">
+            BuildableName = "Catalogue It - Personal Collections.app"
+            BlueprintName = "Catalogue It - Personal Collections"
+            ReferencedContainer = "container:Catalogue It - Personal Collections.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F226ACC1F716A1A00F78222"
-            BuildableName = "Catalogue It.app"
-            BlueprintName = "Catalogue It"
-            ReferencedContainer = "container:Catalogue It.xcodeproj">
+            BuildableName = "Catalogue It - Personal Collections.app"
+            BlueprintName = "Catalogue It - Personal Collections"
+            ReferencedContainer = "container:Catalogue It - Personal Collections.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F226ACC1F716A1A00F78222"
-            BuildableName = "Catalogue It.app"
-            BlueprintName = "Catalogue It"
-            ReferencedContainer = "container:Catalogue It.xcodeproj">
+            BuildableName = "Catalogue It - Personal Collections.app"
+            BlueprintName = "Catalogue It - Personal Collections"
+            ReferencedContainer = "container:Catalogue It - Personal Collections.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

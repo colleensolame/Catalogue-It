@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F226ACD1F716A1A00F78222 /* Catalogue It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogue It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogue It - Personal Collections.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F226AD01F716A1A00F78222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F226AD21F716A1A00F78222 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F226AD51F716A1A00F78222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		0F226ACE1F716A1A00F78222 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F226ACD1F716A1A00F78222 /* Catalogue It.app */,
+				0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F226ACC1F716A1A00F78222 /* Catalogue It */ = {
+		0F226ACC1F716A1A00F78222 /* Catalogue It - Personal Collections */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It" */;
+			buildConfigurationList = 0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It - Personal Collections" */;
 			buildPhases = (
 				9F14BAEA140DEB5799E7EC41 /* [CP] Check Pods Manifest.lock */,
 				0F226AC91F716A1A00F78222 /* Sources */,
@@ -115,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = "Catalogue It";
+			name = "Catalogue It - Personal Collections";
 			productName = "Catalogue It";
-			productReference = 0F226ACD1F716A1A00F78222 /* Catalogue It.app */;
+			productReference = 0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It" */;
+			buildConfigurationList = 0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It - Personal Collections" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F226ACC1F716A1A00F78222 /* Catalogue It */,
+				0F226ACC1F716A1A00F78222 /* Catalogue It - Personal Collections */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It" */ = {
+		0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It - Personal Collections" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F226ADD1F716A1A00F78222 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It" */ = {
+		0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It - Personal Collections" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F226AE01F716A1A00F78222 /* Debug */,
