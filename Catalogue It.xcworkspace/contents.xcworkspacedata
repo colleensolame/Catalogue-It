@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ColleenNg/Desktop/SWIFT/Catalogue It/Catalogue It - Personal Collections.xcodeproj">
+      location = "group:/Users/ColleenNg/Desktop/SWIFT/Catalogue It/Catalogue It.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Catalogue It.xcodeproj">
    </FileRef>
 </Workspace>

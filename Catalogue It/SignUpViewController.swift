@@ -97,7 +97,9 @@ class SignUpViewController: UIViewController {
                         } else {
                             
                             // Adding user information to database
-                            Database.database().reference().child("users").child(user!.uid).child("Full Name").child((user!.displayName)!).child("email").setValue(user!.email!)
+                            let users = ["name": user!.displayName!, "email": user!.email!]
+                                
+                            Database.database().reference().child("users").child(user!.uid).setValue(users)
                             self.buttonSignUp.isEnabled = true
                             self.lblSuccess.isHidden = false
                             print("Success!!")

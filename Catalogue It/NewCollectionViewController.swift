@@ -10,7 +10,8 @@ import UIKit
 import Firebase
 import FirebaseStorage
 
-class NewCollectionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NewCollectionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIScrollViewDelegate {
+    
     
     var imagePicker = UIImagePickerController()
     var collections: [Collection] = []
@@ -23,6 +24,8 @@ class NewCollectionViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var txtSubtitle: UITextField!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var photosButton: UIBarButtonItem!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +33,64 @@ class NewCollectionViewController: UIViewController, UIImagePickerControllerDele
         // Do any additional setup after loading the view.
 //        addButton.isEnabled = false
         imagePicker.delegate = self
+        
+        view.addSubview(scrollView)
+        let sizes = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+        scrollView.contentSize = sizes
+        
+//        let sizes
+//        let sizing = CGSize(width: self.view.frame.width, height: (self.view.frame.height + 100))
+//        scrollView.contentSize = sizing
     }
+    
+    
+
+    func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        txtTitle.resignFirstResponder()
+    }
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWasShown), name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    func deregisterFromKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        deregisterFromKeyboardNotifications()
+        super.viewWillDisappear(animated)
+    }
+    
+    func keyboardWasShown(_ notification: Notification) {
+        let info = notification.userInfo
+        let keyboardSize: CGSize? = (info?[UIKeyboardFrameBeginUserInfoKey] as AnyObject).cgRectValue?.size
+        let buttonOrigin: CGPoint = addButton.frame.origin
+        let buttonHeight: CGFloat = addButton.frame.size.height
+        var visibleRect: CGRect = view.frame
+        visibleRect.size.height -= (keyboardSize?.height)!
+        if !visibleRect.contains(buttonOrigin) {
+            let scrollPoint = CGPoint(x: 0.0, y: buttonOrigin.y - visibleRect.size.height + buttonHeight)
+            scrollView.setContentOffset(scrollPoint, animated: true)
+        }
+    }
+    
+    func keyboardWillBeHidden(_ notification: Notification) {
+        scrollView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
+    
+    
+    
+    
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
@@ -80,7 +140,7 @@ class NewCollectionViewController: UIViewController, UIImagePickerControllerDele
 
                 let collection = ["title": self.collectionTitle, "subtitle": self.collectionSubtitle, "collectionImageURL": self.imageURL]
                 
-                Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).child("Full Name").child(Auth.auth().currentUser!.displayName!).child("collections").childByAutoId().setValue(collection)
+                Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).child("collections").childByAutoId().setValue(collection)
                 
                 self.navigationController!.popViewController(animated: true)
                 self.addButton.isEnabled = true

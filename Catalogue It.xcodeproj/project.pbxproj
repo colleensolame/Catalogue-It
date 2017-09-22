@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F0F262B1F74E6BD009AC663 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F262A1F74E6BD009AC663 /* User.swift */; };
 		0F0F262E1F74E8F4009AC663 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F262D1F74E8F4009AC663 /* Collection.swift */; };
+		0F0F26301F750DED009AC663 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F262F1F750DED009AC663 /* ItemsViewController.swift */; };
 		0F226AD11F716A1A00F78222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F226AD01F716A1A00F78222 /* AppDelegate.swift */; };
 		0F226AD31F716A1A00F78222 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F226AD21F716A1A00F78222 /* LoginViewController.swift */; };
 		0F226AD61F716A1A00F78222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F226AD41F716A1A00F78222 /* Main.storyboard */; };
@@ -24,7 +25,8 @@
 /* Begin PBXFileReference section */
 		0F0F262A1F74E6BD009AC663 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0F0F262D1F74E8F4009AC663 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
-		0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogue It - Personal Collections.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0F262F1F750DED009AC663 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = "Catalogue It/ItemsViewController.swift"; sourceTree = "<group>"; };
+		0F226ACD1F716A1A00F78222 /* Catalogue It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogue It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F226AD01F716A1A00F78222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F226AD21F716A1A00F78222 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Catalogue It/LoginViewController.swift"; sourceTree = "<group>"; };
 		0F226AD51F716A1A00F78222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				0FF11B291F7241FA00D7658E /* SignUpViewController.swift */,
 				0F226AE81F717E4500F78222 /* CollectionsViewController.swift */,
 				0F90C11D1F7409D2008BDD4A /* NewCollectionViewController.swift */,
+				0F0F262F1F750DED009AC663 /* ItemsViewController.swift */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -87,7 +90,7 @@
 		0F226ACE1F716A1A00F78222 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */,
+				0F226ACD1F716A1A00F78222 /* Catalogue It.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F226ACC1F716A1A00F78222 /* Catalogue It - Personal Collections */ = {
+		0F226ACC1F716A1A00F78222 /* Catalogue It */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It - Personal Collections" */;
+			buildConfigurationList = 0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It" */;
 			buildPhases = (
 				9F14BAEA140DEB5799E7EC41 /* [CP] Check Pods Manifest.lock */,
 				0F226AC91F716A1A00F78222 /* Sources */,
@@ -142,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "Catalogue It - Personal Collections";
+			name = "Catalogue It";
 			productName = "Catalogue It";
-			productReference = 0F226ACD1F716A1A00F78222 /* Catalogue It - Personal Collections.app */;
+			productReference = 0F226ACD1F716A1A00F78222 /* Catalogue It.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It - Personal Collections" */;
+			buildConfigurationList = 0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F226ACC1F716A1A00F78222 /* Catalogue It - Personal Collections */,
+				0F226ACC1F716A1A00F78222 /* Catalogue It */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +209,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Catalogue It/Pods-Catalogue It-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -213,6 +217,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -266,6 +271,7 @@
 				0F0F262B1F74E6BD009AC663 /* User.swift in Sources */,
 				0F90C11E1F7409D2008BDD4A /* NewCollectionViewController.swift in Sources */,
 				0FF11B2A1F7241FA00D7658E /* SignUpViewController.swift in Sources */,
+				0F0F26301F750DED009AC663 /* ItemsViewController.swift in Sources */,
 				0F0F262E1F74E8F4009AC663 /* Collection.swift in Sources */,
 				0F226AD11F716A1A00F78222 /* AppDelegate.swift in Sources */,
 			);
@@ -419,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It - Personal Collections" */ = {
+		0F226AC81F716A1900F78222 /* Build configuration list for PBXProject "Catalogue It" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F226ADD1F716A1A00F78222 /* Debug */,
@@ -428,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It - Personal Collections" */ = {
+		0F226ADF1F716A1A00F78222 /* Build configuration list for PBXNativeTarget "Catalogue It" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F226AE01F716A1A00F78222 /* Debug */,

@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
+import FirebaseDatabase
+import FirebaseAuth
+import SDWebImage
 
-class CollectionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class CollectionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var collections: [String] = []
+    var collections: [Collection] = []
+    var frameView: UIView!
     
     @IBOutlet weak var collectionsTableView: UITableView!
     override func viewDidLoad() {
@@ -19,15 +25,51 @@ class CollectionsViewController: UIViewController, UITableViewDataSource, UITabl
         collectionsTableView.dataSource = self
         collectionsTableView.delegate = self
         
+        Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).child("collections").observe(DataEventType.childAdded, with: { (snapshot) in
+            print(snapshot)
+            
+            let collection = Collection()
+            let snapshotValue = snapshot.value as? NSDictionary
+            collection.collectionImageURL = snapshotValue!["collectionImageURL"] as! String
+            collection.title = snapshotValue!["title"] as! String
+            collection.subTitle = snapshotValue!["subtitle"] as! String
+            
+            self.collections.append(collection)
+            self.collectionsTableView.reloadData()
+            
+            
+        })
+
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return collections.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = collections[indexPath.row]
+        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle,
+                               reuseIdentifier: nil)
+        let collection = collections[indexPath.row]
+        
+        cell.textLabel?.text = collection.title
+        cell.detailTextLabel?.text = collection.subTitle
         
         return cell
         
@@ -37,32 +79,13 @@ class CollectionsViewController: UIViewController, UITableViewDataSource, UITabl
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func btnAdd(_ sender: Any) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let alertController = UIAlertController(title: "Create New Collection", message: nil, preferredStyle: .alert)
-//        
-//        let confirmAction = UIAlertAction(title: "Create", style: .default) { (_) in
-//            if alertController.textFields?[0].text != "" {
-//                self.collections.append((alertController.textFields?[0].text)!)
-//                self.collectionsTableView.reloadData()
-//            } else {
-//                self.collections.append("(empty)")
-//                self.collectionsTableView.reloadData()
-//            }
-//        }
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
-//        
-//        
-//        alertController.addTextField(configurationHandler: {(textField : UITextField!) -> Void in
-//            textField.placeholder = "New Collection"
-//        })
-//        
-//        alertController.addAction(confirmAction)
-//        alertController.addAction(cancelAction)
-//        
-//        self.present(alertController, animated: true, completion: nil)
-        
+        performSegue(withIdentifier: "itemsSegue", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+
     }
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
