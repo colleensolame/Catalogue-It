@@ -66,14 +66,14 @@ class CollectionsViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            /*let collection = collections[indexPath.row]
-            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-            context.delete(sound)
-            (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            do {
-                try sounds = context.fetch(Sound.fetchRequest())
-                collectionsTableView.reloadData()
-            } catch {}*/
+//            let collection = collections[indexPath.row]
+//            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//            context.delete(sound)
+//            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+//            do {
+//                try sounds = context.fetch(Sound.fetchRequest())
+//                collectionsTableView.reloadData()
+//            } catch {}
             collections.remove(at: indexPath.row)
             collectionsTableView.reloadData()
         }
