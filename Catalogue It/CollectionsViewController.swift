@@ -11,7 +11,6 @@ import Firebase
 import FirebaseStorage
 import FirebaseDatabase
 import FirebaseAuth
-import SDWebImage
 
 class CollectionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
